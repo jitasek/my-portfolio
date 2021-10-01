@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=PT+Sans&family=Ubuntu:wght@300&display=swap');
+
+/*BASE STYLING*/
+/*variable for color and text to be used accross the web*/
+:root {
+    --primary-color: #047aed;
+    --text-gray: #333;
+}
+/*reseting the browser default*/
+* {
+    box-sizing: border-box;  /*padding and margin included in an element*/
+    padding: 0;
+    margin: 0;
+}
+
+/*setting font family for all text*/
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none; /*removes bullet points*/
+}
+
+a {
+    text-decoration: none;  /*removes the underline from links */
+    color: var(--text-gray);
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+/*OTHER STYLES*/
+
+.logo {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 45px;
+}
+
+.container {
+    /* position: relative; */
+    /*max-width: vh100%;  /* average desktop width */
+    margin: 0 auto;
+    overflow: auto;  /* to "get rid" of the h1 padding */
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;  /*using fractions*/ 
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /*of its parent*/
+}
+
+.card {
+    flex: 0 0 40%;
+    /*position: absolute;*/
+    align-content: center;
+    background-color: #ffff;
+    color: var(--text-gray);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin-left: 10%;
+}
+
+.navigation {
+    background-color: var(--primary-color);
+    color: #ffff;
+    height: 70px;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+.navigation a {
+    color: #ffff;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+/* pseudo-class*/ 
+.navigation a:hover {
+    border-bottom: 2px #ffff solid;
+}
+
+.navigation .flex {
+    justify-content: space-between;
+}
+
+/* About me section styling*/ 
+.about {
+    display: flex;
+    height: 70vh;
+    background-image: url("/assets/images/hero_climbing_mountain.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffff;
+    position: relative;
+}
+
+.about h1 {
+    font-size: 40px;
+}
+
+.about p {
+    margin: 20px 0;
+}
+.about .grid {
+    overflow: visible;
+}
+/*.about::before, .about::after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background-color: red;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}*/
+
+.about .about-text {
+    position: relative;
+    top: 40px;
+    height: 325px;
+    width: 600px;
+    padding: 40px;
+    z-index: 100; /*will always be over the section*/
+}
+
+/* Project section styling*/ 
+.projects {
+    padding-top: 20px;
+}
+
+.projects h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.projects a {
+    font-size: small;
+}
+
+.projects a:hover {
+    border-bottom: 2px var(--primary-color) solid;
+}
+
+.projects p {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.projects .link {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.projects .grid-row {
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 10px;
+}
+
+/* MEDIA QUERIES*/ 
+@media(max-width:847px){
+    .grid,
+    .about .grid,
+    .projects .grid {
+        grid-template-columns: 1fr; /* 1fr == 1 column*/ 
+        grid-template-rows: 1fr;
+    }
+
+    .about {
+        height: auto;
+        width: auto;
+    }
+
+    .about .profile {
+        justify-self: center;
+    }
+
+    .about .about-text {
+        text-align: center;
+        width: auto;
+        height: auto;
+    }
+
+    .card {
+        width: 300px;
+        margin: 5px;
+        justify-self: center;
+    }
+}
+
+@media(max-width: 500px)  {
+    .navigation {
+        height: 110px;
+    }
+
+    .navigation .flex {
+        flex-direction: column; /* row changes to column*/ 
+    }
+
+    .navigation ul {
+        padding: 10px;
+    }
+    
+    .navigation ul li {
+        border-left: 1px #ffff solid;
+        border-right: 1px #ffff solid;
+    }
+}
