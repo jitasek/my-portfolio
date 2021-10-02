@@ -116,7 +116,7 @@ img {
 .about {
     display: flex;
     height: 70vh;
-    background-image: url("/assets/images/hero_climbing_mountain.jpeg");
+    background-image: url("../images/hero_climbing_mountain.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffff;
