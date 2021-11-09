@@ -41,7 +41,12 @@ p {
   margin: 5px 0;
 }
 
-#descr {
+.web-name {
+  font-weight: bold;
+  color: #3d788f;
+}
+
+.web-descr {
   font-size: small;
 }
 
