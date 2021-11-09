@@ -1,108 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-        <title>Web developer | Portfolio | Jitka Moreira</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Web developer | Portfolio | Jitka Moreira</title>
+  </head>
 
-    <body>
-         <!--Main nav bar-->
-        <div class="navigation">
-            <header class="container flex">
-                <h1 class="logo">jitka moreira</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#about">About me</a></li> 
-                        <li><a href="#work">My work</a></li>
-                        <li><a href="#footer">Contact</a></li>
-                        <!--temporary link to my LinkedIn page-->
-                        <li><a href="https://www.linkedin.com/in/jitka-moreira-26838a73/">Resume</a></li>
-                    </ul>
-                </nav>
-            </header>
+  <body>
+    <!--Main nav bar-->
+    <div class="navigation">
+      <header class="container flex">
+        <h1 class="logo">jitka moreira</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#work">My work</a></li>
+            <li><a href="#footer">Contact</a></li>
+            <!--temporary link to my LinkedIn page-->
+            <li>
+              <a href="https://www.linkedin.com/in/jitka-moreira-26838a73/"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!--About me-->
+
+    <section id="about" class="about">
+      <div class="container grid">
+        <!--<img src="assets/images/hero_climbing_mountain.jpeg" alt="nine people climbing a mountain"> -->
+
+        <div class="about-text card">
+          <h1>HELLO!</h1>
+          <p>
+            I am Jitka and I love to improve people's lives. There are many ways
+            to do that. Talking about the online world, it is a seamless user
+            experience. On my professional journey, I've looked into it from
+            multiple perspectives: starting with web audits, web analytics,
+            through UX (re)design, web content creation, e2e management of
+            digital projects, using design thinking to create my own product in
+            an agile way. It was an enjoyable and inspiring journey which took
+            me to my desired destination - the place you know you don't wanna
+            leave. For me, this place is web development. I am actively building
+            new skills and knowledge every day and I am loving it. I added a few
+            of my starting projects below. Feel free to check them!
+          </p>
         </div>
+      </div>
+    </section>
 
-        <!--About me-->
+    <!-- Projects -->
+    <section id="work" class="work">
+      <div class="container">
+        <h1>Work</h1>
+        <div class="grid grid-row">
+          <div class="card">
+            <img
+              src="./assets/images/project_icon.png"
+              alt="my first project"
+            />
+            <div class="flex">
+              <div class="link">
+                <i class="fas fa-globe fa-2x"></i>
+                <a target="_blank" href="google.com">Deployed Link</a>
+              </div>
+              <div class="link">
+                <i class="fas fa-code fa-2x"></i>
+                <a target="_blank" href="google.com">Repository Link</a>
+              </div>
+            </div>
+            <p>My First Project</p>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/images/project_icon.png"
+              alt="my second project"
+            />
+            <div class="flex">
+              <div class="link">
+                <i class="fas fa-globe fa-2x"></i>
+                <a target="_blank" href="amazon.com">Deployed Link</a>
+              </div>
+              <div class="link">
+                <i class="fas fa-code fa-2x"></i>
+                <a target="_blank" href="amazon.com">Repository Link</a>
+              </div>
+            </div>
+            <p>My Second Project</p>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/images/project_icon.png"
+              alt="my third project"
+            />
+            <div class="flex">
+              <div class="link">
+                <i class="fas fa-globe fa-2x"></i>
+                <a target="_blank" href="netflix.com">Deployed Link</a>
+              </div>
+              <div class="link">
+                <i class="fas fa-code fa-2x"></i>
+                <a target="_blank" href="netflix.com">Repository Link</a>
+              </div>
+            </div>
+            <p>My Third Project</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="about" class="about">
-            <div class="container grid">
-                <!--<img src="assets/images/hero_climbing_mountain.jpeg" alt="nine people climbing a mountain"> -->
-
-                <div class="about-text card">
-                    <h1>About me</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects -->
-        <section id="work" class="work">
-            <div class="container">
-            <h1>Work</h1>
-            <div class="grid grid-row">
-                <div class="card">
-                <img src="./assets/images/project_icon.png" alt="my first project" />
-                <div class="flex">
-                    <div class="link">
-                    <i class="fas fa-globe fa-2x"></i>
-                    <a target="_blank" href="google.com">Deployed Link</a>
-                    </div>
-                    <div class="link">
-                    <i class="fas fa-code fa-2x"></i>
-                    <a target="_blank" href="google.com">Repository Link</a>
-                    </div>
-                </div>
-                <p>My First Project</p>
-                </div>
-                <div class="card">
-                <img src="./assets/images/project_icon.png" alt="my second project" />
-                <div class="flex">
-                    <div class="link">
-                    <i class="fas fa-globe fa-2x"></i>
-                    <a target="_blank" href="amazon.com">Deployed Link</a>
-                    </div>
-                    <div class="link">
-                    <i class="fas fa-code fa-2x"></i>
-                    <a target="_blank" href="amazon.com">Repository Link</a>
-                    </div>
-                </div>
-                <p>My Second Project</p>
-                </div>
-                <div class="card">
-                <img src="./assets/images/project_icon.png" alt="my third project" />
-                <div class="flex">
-                    <div class="link">
-                    <i class="fas fa-globe fa-2x"></i>
-                    <a target="_blank" href="netflix.com">Deployed Link</a>
-                    </div>
-                    <div class="link">
-                    <i class="fas fa-code fa-2x"></i>
-                    <a target="_blank" href="netflix.com">Repository Link</a>
-                    </div>
-                </div>
-                <p>My Third Project</p>
-                </div>
-            </div>
-            </div>
-        </section>
-        
-        <footer id="footer" class="work">
-         <div class="container contact">
-                <h1>Contact Me</h1>
-                <div>
-                    <ul>
-                        <li>+420 123 456 789</li>
-                        <li>jitka.moreira@gmail.com</li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-    </body>
+    <footer id="footer" class="work">
+      <div class="container contact">
+        <h1>Contact Me</h1>
+        <div>
+          <ul>
+            <li>+420 123 456 789</li>
+            <li>jitka.moreira@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
