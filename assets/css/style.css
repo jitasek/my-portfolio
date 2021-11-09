@@ -25,6 +25,15 @@ ul {
   list-style-type: none; /*removes bullet points*/
 }
 
+.fa-github {
+  font-size: 22px;
+}
+
+.fa-linkedin {
+  color: #ffff;
+  font-size: 22px;
+}
+
 a {
   text-decoration: none; /*removes the underline from links */
   color: var(--text-gray);
@@ -228,6 +237,10 @@ img {
   .work .grid {
     grid-template-columns: 1fr; /* 1fr == 1 column*/
     grid-template-rows: 1fr;
+  }
+
+  .logo {
+    font-size: 30px;
   }
 
   .about {
