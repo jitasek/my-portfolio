@@ -42,7 +42,7 @@ p {
 }
 
 #descr {
-    font-size: small;
+  font-size: small;
 }
 
 img {
@@ -120,7 +120,7 @@ img {
 /* About me section styling*/
 .about {
   display: flex;
-  height: 70vh;
+  height: 80vh;
   background-image: url("../images/hero_climbing_mountain.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -128,8 +128,8 @@ img {
   position: relative;
 }
 
-.about h1 {
-  font-size: 40px;
+.about h2 {
+  font-size: 30px;
 }
 
 .about p {
