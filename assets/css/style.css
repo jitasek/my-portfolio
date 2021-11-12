@@ -4,7 +4,7 @@
 /*BASE STYLING*/
 /*variable for color and text to be used accross the web*/
 :root {
-  --primary-color: #047aed;
+  --primary-color: #5a5655;
   --text-gray: #333;
 }
 /*reseting the browser default*/
@@ -96,6 +96,7 @@ img {
 
 .card {
   flex: 0 0 40%;
+  max-height: 280px;
   align-content: center;
   background-color: #ffff;
   color: var(--text-gray);
@@ -218,16 +219,26 @@ img {
 }
 
 .contact ul {
+  /* display: flex; */
   padding: 0 250px;
   margin: 40px 0;
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  /* justify-content: space-between; */
   width: 100%;
 }
 
 .contact ul li {
-  display: inline;
+  /* display: inline; */
   font-weight: bold;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#foot-h1 {
+  display: block;
+  text-align: center;
 }
 
 /* MEDIA QUERIES*/
@@ -266,6 +277,12 @@ img {
 
   .work h1 {
     margin-top: 70px;
+  }
+}
+
+@media (max-width: 770px) {
+  .card {
+    max-height: 440px;
   }
 }
 
