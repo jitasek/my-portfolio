@@ -223,6 +223,7 @@ img {
   background-color: #ffff;
   color: var(--text-gray);
   border-radius: 10px;
+  border-color: var(--primary-color);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   padding: 5px;
   margin-left: 10%;
