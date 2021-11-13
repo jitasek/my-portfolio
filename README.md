@@ -23,3 +23,12 @@ It is a live website which you can access simply by clicking on the following UR
 ## License
 
 ![MIT License](https://img.shields.io/badge/License-MIT-yellowgreen)
+
+## Additional links
+
+<a href="https://www.linkedin.com/in/jitka-moreira-26838a73/">My LinkedIn profile</a>
+<a href="https://github.com/jitasek">My GitHub profile</a>
+
+## Screenshot
+
+<img src="./assets/images/Web-developer-Portfolio-Jitka-Moreira.png">
