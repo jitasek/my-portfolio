@@ -26,7 +26,7 @@ It is a live website which you can access simply by clicking on the following UR
 
 ## Additional links
 
-<a href="https://www.linkedin.com/in/jitka-moreira-26838a73/">My LinkedIn profile</a>
+<a href="https://www.linkedin.com/in/jitka-moreira-26838a73/">My LinkedIn profile</a><br>
 <a href="https://github.com/jitasek">My GitHub profile</a>
 
 ## Screenshot
