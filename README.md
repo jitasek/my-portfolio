@@ -1,5 +1,9 @@
 # my-portfolio
 
+![MIT License](https://img.shields.io/badge/License-MIT-yellowgreen)
+<br>
+Link to the <a href="https://jitasek.github.io/my-portfolio/">deployed app</a>.
+
 ## Description
 
 Web application featuring my portfolio. It aggregates information about me and my career path and some of my latest web dev projects.
